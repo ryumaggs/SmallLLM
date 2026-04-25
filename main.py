@@ -59,6 +59,7 @@ if __name__ == "__main__":
     #training configs
     max_iters = 10000
     learning_rate = 3e-4
+    train_bool=False
 
     d = shakeData.shakeData('./tinyShake.txt',)
     '''
@@ -75,7 +76,7 @@ if __name__ == "__main__":
                                 dropout=0.2,
                                 device=torch.device('cuda:1'))
 
-    if False:
+    if train_bool:
         train(model, d, 10000,
               batch_size=batch_size,context_length=block_size)
         torch.save(model.state_dict(), './models/model.pth')

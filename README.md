@@ -2,9 +2,13 @@
 
 This repository is based on the walkthrough provided by Andrej Karpathy at [this link](https://www.youtube.com/watch?v=kCc8FmEb1nY&t=6331s)
 
-## Data set
+## Data Set, Requirements, and Training
 
-Trained entirely on the Tiny Shakespeare data set, provided in repo at tinyShake.txt
+Trained entirely on the Tiny Shakespeare data set, provided in repo at tinyShake.txt \
+\
+Only two python libraries are required: Torch and Numpy. 
+\
+Main.py contains the hyperparemeter settings and main training loop\
 
 ## Sample Output and Loss
 

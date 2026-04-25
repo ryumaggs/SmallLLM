@@ -10,26 +10,26 @@ Trained entirely on the Tiny Shakespeare data set, provided in repo at tinyShake
 
 Lowest validation loss achieved: 0.0076 (cross entropy)
 
-Sample Output:
-VOLTARUENCENCK:
-Ocicke jove?
+Sample Output: \
+VOLTARUENCENCK: \
+Ocicke jove? \
+ \
+UKE VINCHANGER: \
+Go to king he do lake, sour scempions, his to lefse. \
 
-UKE VINCHANGER:
-Go to king he do lake, sour scempions, his to lefse.
-
-Hath and chathem ose them,
-Come to don the prome,
-To wed gome chord the forsh che ampiest the rith
-That
-The sus'd lep, I beraon; whou is;
-T is the dake the his freincent my thou me he ofn veristate,
-Wh poible this for epa jonk hist fear
-The more timpang, bir with not his,
-:ixhou rojocelr.
-
-DUKE VALT:
-Whout like, bear, whenigh thy ,is the her abs is So with my my of to hoep;
-Ke no, for boved.
+Hath and chathem ose them,\
+Come to don the prome,\
+To wed gome chord the forsh che ampiest the rith\
+That\
+The sus'd lep, I beraon; whou is;\
+T is the dake the his freincent my thou me he ofn veristate,\
+Wh poible this for epa jonk hist fear\
+The more timpang, bir with not his,\
+:ixhou rojocelr.\
+\
+DUKE VALT:\
+Whout like, bear, whenigh thy ,is the her abs is So with my my of to hoep;\
+Ke no, for boved.\
 
 
 ## Model Architecture

@@ -2,17 +2,27 @@ import torch
 import copy
 class BigramModel(torch.nn.Module):
     def __init__(self, vocab_size,
+                 block_size,
+                 embed_size,
                  device='cuda:1'):
         super().__init__()
-        self.token_table = torch.nn.Embedding(vocab_size,vocab_size).to(torch.device(device))
-        
+        self.device=torch.device(device)
+        self.token_table = torch.nn.Embedding(vocab_size,embed_size).to(torch.device(device))
+        self.position_embedding_table = torch.nn.Embedding(block_size,embed_size).to(self.device)
+        self.head = torch.nn.Linear(embed_size,vocab_size).to(torch.device(device))
+
     def forward(self, x):
-        logits = self.token_table(x)
+        B, T = x.shape
+        embeddings = self.token_table(x) #(B,T,Embed)
+        pos_embeddings = self.position_embedding_table(torch.arange(T,device=self.device))
+        x_new = embeddings + pos_embeddings
+        logits = self.head(x_new) #(B,T,C)
         return logits
     
     def generate(self, starting_tokens,
                  max_new_tokens,):
         '''
+        OUTDATED WITH NEW ONE
         Look up on the token_table and output the max probability of the next token
         then recursively call (or loop) on self with new last token
         '''

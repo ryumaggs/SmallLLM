@@ -26,8 +26,15 @@ def train(model, data, epochs):
 
 if __name__ == "__main__":
     d = shakeData.shakeData('./tinyShake.txt',)
-    model = bigram.BigramModel(d.vocab_size)
+    model = bigram.BigramModel(d.vocab_size,
+                               block_size=8,
+                               embed_size=32)
+    x, y = d.get_batch(train=True,batch_size=4)
+    out = model(x)
+    print(out)
+    print(out.shape)
 
+    exit(1)
     train(model, d, 10000)
     output_tokens = model.generate(starting_tokens = [34],
                    max_new_tokens = 100,)

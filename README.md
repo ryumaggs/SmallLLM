@@ -19,7 +19,7 @@ VOLTARUENCENCK: \
 Ocicke jove? \
  \
 UKE VINCHANGER: \
-Go to king he do lake, sour scempions, his to lefse. \
+Go to king he do lake, sour scempions, his to lefse.
 
 Hath and chathem ose them,\
 Come to don the prome,\

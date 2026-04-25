@@ -10,6 +10,7 @@ Trained entirely on the Tiny Shakespeare data set, provided in repo at tinyShake
 
 Lowest validation loss achieved: 0.0076 (cross entropy)
 
+Sample Output:
 VOLTARUENCENCK:
 Ocicke jove?
 

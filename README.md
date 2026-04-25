@@ -8,7 +8,7 @@ Trained entirely on the Tiny Shakespeare data set, provided in repo at tinyShake
 \
 Only two python libraries are required: Torch and Numpy. \
 \
-Main.py contains the hyperparemeter settings and main training loop \
+Main.py contains the hyperparemeter settings and main training loop
 
 ## Sample Output and Loss
 
